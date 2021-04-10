@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+}
+.headerLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerLeft > img{
+    margin-left: 10px;
+}
+
+.headerMiddle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerMiddle > .header__SearchContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgba(173, 173, 173, 0.486);
+    border-radius: 5px;
+    width: 40vw;
+}
+
+.header__SearchContainer > input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-size: large;
+    color:  rgba(255, 255, 255, 0.849);
+    flex: 1;
+}
+.header__SearchContainer > input::placeholder{
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.headerRight{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.headerRightIcons{
+    display: flex;
+}
+
+.headerRightIcons > .MuiSvgIcon-root{
+    margin-right: 1.5vw;
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.938)
+}
+.MuiSvgIcon-root{
+    color: white;
+    cursor: pointer;
+}

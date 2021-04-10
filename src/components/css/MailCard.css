@@ -1,0 +1,147 @@
+.mailCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.accordLeft{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+}
+
+.accordLeft > .MuiSvgIcon-root{
+    margin-left: 5px;
+}
+
+.accordMid{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.accordMidMain{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.MuiPaper-root{
+    color:rgb(0, 0, 0) !important;
+    border-bottom: 1px solid #aaa;
+    background-color: #000 !important;
+    opacity: 0.8;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .MuiPaper-root {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+  }
+  
+
+.accordDetails{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.accordDetailsTop{
+    display: flex;
+    
+    align-items: center;
+}
+
+.accordDetailsTop > p{
+    font-weight: 500;
+    margin: 10px 60px;
+}
+
+.accordDetailsTopRight{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.accordDetailsTopRight > .MuiSvgIcon-root{
+    color: black;
+    margin-right: 20px;
+}
+
+.accordDetailsInfo{
+    display: flex;
+    margin-left: 10px;
+}
+
+.sendersInfo{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.sendersInfo > h4{
+    font-size: 1.1rem;
+}
+
+.sendersInfo > h4 > small{
+    color: rgb(42, 42, 42);
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.sendersInfoDate{
+    margin-right: 10px;
+    display: flex;
+}
+
+.sendersInfoDateOption{
+    display: flex;
+}
+
+.sendersInfoDateOption > .MuiSvgIcon-root{
+    color: black;
+    margin-left: 10px;
+}
+
+.mailContent{
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.253);
+    margin-left: 10px;
+}
+
+.mailContentAccord{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.mailReplyLinks{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.mailReplyLink{
+    display: flex;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.mailReplyLink > a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
