@@ -4,7 +4,9 @@
   background-image: url("https://i.pinimg.com/originals/a0/80/fa/a080faebdb78b8d0331428c2a28e50a4.jpg");
   background-position: fixed;
   background-size: cover;
-  min-height: 750px;
+  /* min-height: 750px; */
+  width: fit-content;
+  height: fit-content;
 }
 
 .App-logo {

@@ -17,7 +17,8 @@ function App() {
         uid: authUser.uid,
         email: authUser.email,
         displayName: authUser.displayName ? authUser.displayName : authUser.email.toString().split("@")[0].trim(),
-        photo: authUser.photoURL ? authUser.photoURL : "https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"
+        photo: authUser.photoURL ? authUser.photoURL : "https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png",
+        emailVerified: authUser.emailVerified
       }  
       ))
       console.log(authUser)

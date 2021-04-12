@@ -26,6 +26,10 @@
     cursor: pointer;
 }
 
+.sidebarOption > img:hover{
+    filter: invert(1);
+}
+
 .sidebarOptionIcon > .MuiSvgIcon-root{
     padding: 5px;
     color: rgba(255, 255, 255, 0.575);

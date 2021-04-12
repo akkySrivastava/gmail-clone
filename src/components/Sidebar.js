@@ -38,6 +38,17 @@ function Sidebar() {
     const [subject, setSubject] = useState("")
     const [content, setContent] = useState("")
 
+    const shareMeet = () => {
+        if(user.emailVerified){
+            window.open('https://meet.google.com/getalink?hs=202')
+        }
+        else {
+            alert('Please sign in using google account to access this feature')
+            if(window.confirm('Would you like to continue with google account')){
+            auth.signOut()
+        }
+    }
+}
     const sendMail = (e) => {
         e.preventDefault()
 
@@ -47,7 +58,7 @@ function Sidebar() {
             subject: subject,
             content: content,
             user: user,
-            sent: false,
+            sent: true,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
         setModalOpen(false)
@@ -185,7 +196,7 @@ function Sidebar() {
                             alt = "meet"
                         />
                     </div>
-                        <div className = "sidebarOptionIcon">
+                        <div onClick = {shareMeet} className = "sidebarOptionIcon">
                         <VideocamIcon />
                     </div>
                     <div className = "sidebarOptionIcon">
