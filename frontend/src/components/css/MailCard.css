@@ -1,0 +1,248 @@
+.mailCard{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+
+.accordLeft{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+}
+
+.accordLeft > .MuiSvgIcon-root{
+    margin-left: 5px;
+}
+
+.accordMid{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.accordMidMain{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.MuiPaper-root{
+    color:rgb(0, 0, 0) !important;
+    border-bottom: 1px solid #aaa;
+    background-color: #000 !important;
+    opacity: 0.8;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .MuiPaper-root {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+  }
+  
+
+.accordDetails{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.accordDetailsTop{
+    display: flex;
+    
+    align-items: center;
+}
+
+.accordDetailsTop > p{
+    font-weight: 500;
+    margin: 10px 60px;
+}
+
+.accordDetailsTopRight{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.accordDetailsTopRight > .MuiSvgIcon-root{
+    color: black;
+    margin-right: 20px;
+}
+
+.accordDetailsInfo{
+    display: flex;
+    margin-left: 10px;
+}
+
+.sendersInfo{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.sendersInfo > h4{
+    font-size: 1.1rem;
+}
+
+.sendersInfo > h4 > small{
+    color: rgb(42, 42, 42);
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.sendersInfoDate{
+    margin-right: 10px;
+    display: flex;
+}
+
+.sendersInfoDateOption{
+    display: flex;
+}
+
+.sendersInfoDateOption > .MuiSvgIcon-root{
+    color: black;
+    margin-left: 10px;
+}
+
+.mailContent{
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.253);
+    margin-left: 10px;
+}
+
+.mailContentAccord{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.mailReplyLinks{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 10px;
+}
+
+.mailReplyLink{
+    display: flex;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mailReplyLink:hover{
+    opacity: 0.8;
+}
+
+.mailReplyLink > a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    margin-left: 5px;
+}
+
+.noMail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 91vw;
+}
+
+.noMailContainer{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 9px 9px 9px rgba(0, 0, 0, 0.253);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .noMailContainer {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+  }
+
+.noMailContainer > img{
+    width: 420px;
+    object-fit: contain;
+}
+
+.noMailContainer > h3{
+    display: flex;
+    align-items: center;
+}
+
+.noMailContainer > h3 > span{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.noMailContainer > h3 > span:hover{
+    filter: invert(1);
+}
+
+.repliedMail{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.repliedMailContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.repliedMailTop{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.repliedMailTop > h5{
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+
+.repliedMailTop > h5:after{
+    background-color: blue;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20vw;
+}
+
+.repliedMailTop > h5:before{
+    background-color: blue;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20vw;
+}
+

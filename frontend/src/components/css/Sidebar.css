@@ -1,0 +1,170 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    flex: 0.02;
+    border-right: 2px solid rgba(255, 255, 255, 0.26);
+}
+
+.sidebarOptionsTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.sidebarOption{
+    margin-bottom: 10px;
+}
+
+.sidebarOption > img{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebarOption > img:hover{
+    filter: invert(1);
+}
+
+.sidebarOptionIcon > .MuiSvgIcon-root{
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.sidebarOptionIcon > .MuiSvgIcon-root:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 50%;
+    color: white;
+}
+
+.sidebarOptionsBottom{
+    border-top: 2px solid rgba(255, 255, 255, 0.322);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarOptions{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarBottomLast{
+    display: flex;
+    border-top: 2px solid rgba(255, 255, 255, 0.322);
+}
+
+.sidebarOptionBottom > img{
+    padding: 5px;
+}
+
+.modalHeader{
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.modalHeader > p{
+    flex: 1;
+}
+
+.modalRecipient{
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px;
+    border-bottom: 2px solid rgb(241, 241, 241);
+}
+
+.modalRecipient > p{
+    margin-right: 10px;
+    color: #333;
+}
+
+.modalRecipient > input{
+    outline: none;
+    width: 100%;
+    border: none;
+}
+
+
+.quill{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.modalBottom{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.modalBottomLast {
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.modalBottomLast > .MuiSvgIcon-root{
+    color: rgba(51, 51, 51, 0.671);
+    margin-left: 10px;
+}
+
+.modalBottomLast > .MuiSvgIcon-root:hover{
+    color: #000;
+}
+
+
+.modalBottom > .MuiSvgIcon-root{
+    color: rgba(51, 51, 51, 0.671);
+    margin-left: 10px;
+}
+
+.modalBottom > .MuiSvgIcon-root:hover{
+    color: #000;
+}
+.modalContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContainerTop{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.modalContainerBottom{
+    margin-top: 250px;
+    position: sticky;
+    bottom: 1px;
+    background-color: white;
+}
+
+.modalBottom > button{
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+}

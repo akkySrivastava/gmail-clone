@@ -1,0 +1,130 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .loginContainer {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+  }
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo > img{
+    width: 150px;
+}
+
+.logo > h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.logo > p{
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.loginContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContent > input{
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.loginContent > button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.643);
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: 2px solid rgb(0, 0, 255);
+    cursor: pointer;
+}
+
+.loginContent > button:last-child{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(220, 20, 60, 0.637);
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: 2px solid rgb(255, 0, 51);
+    cursor: pointer;
+}
+
+.loginContent > button:hover{
+    background-color: transparent;
+}
+
+.loginContainer > p{
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.loginContainer > p:hover{
+    color: blue;
+    text-decoration: underline blue;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 150px;
+}
+
+.loading > img{
+    width: 250px;
+    object-fit: contain;
+}
+
+.loading > h1{
+    color: white;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .loading {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.5);  
+    }
+  }
